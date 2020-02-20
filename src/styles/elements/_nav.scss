@@ -1,0 +1,54 @@
+.nav {
+  &_side {
+    background-color: $blank;
+    position: fixed;
+    margin-top: 65px;
+    min-width: 240px;
+    min-height: calc(100vh - 65px);
+    display: flex;
+    flex-direction: column;
+    padding: 2.8em 0;
+    align-items: stretch;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
+      display: none;
+      &.mobile-visible {
+        display: flex;
+      }
+    }
+    &_list {
+      margin: 0;
+      margin-top: 2em;
+      padding: 0;
+    }
+    &_item {
+      display: flex;
+      font-size: 1em;
+      color: $bismarck;
+      padding: 1.28em 2.85em;
+      background-color: $blank;
+      border: 1px solid $blank;
+      cursor: pointer;
+      transition: background-color .2s ease-out,
+                  border-bottom-color .2s ease-out,
+                  color .2s ease-out;
+      &:hover, &.active {
+        border-color: $gallery;
+        border-bottom-color: $mercury;
+        background-color: $gallery;
+        color: $black;
+      }
+    }
+    &_info {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      & h2 {
+        margin: 0;
+        margin-top: .7em;
+        font-size: 1em;
+        letter-spacing: 0;
+        color: $prussian_blue;
+      }
+    }
+  }
+}

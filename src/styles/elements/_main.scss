@@ -1,0 +1,19 @@
+.main {
+  &__wrapper {
+    min-height: 100vh;;
+    width: 100%;
+    display: flex;
+  }
+  &__content {
+    margin-top: 65px;
+    margin-left: 240px;
+    box-sizing: border-box;
+    padding: 2.14em 5em;
+    flex-basis: 100%;
+    background-color: $aqua_spring;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
+      margin-left: 0;
+      padding: 2.14em;
+    }
+  }
+}

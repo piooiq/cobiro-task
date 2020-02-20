@@ -1,0 +1,69 @@
+.search {
+  &__wrapper {
+    border: 1px solid $athens_grey;
+    border-radius: 5px;
+    height: 40px;
+    background-color: $blank;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  &__input {
+    width: 100%;
+    padding: 0.714em 1.42em;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 0;
+    color: $prussian_blue;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
+      padding: .7em;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &__list {
+    padding: 0;
+    margin: 0;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
+      margin-top: 2em;
+    }
+    & > li {
+      display: flex;
+    }
+  }
+  &__item {
+    display: flex;
+    height: 80px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0.7em 0;
+    background: $blank;
+    border: 1px solid $athens_grey;
+    border-radius: 5px;
+    padding: 0 1.42em;
+    justify-content: space-between;
+    align-items: center;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
+      height: auto;
+      padding: .7em;
+      margin: .5em 0;
+    }
+    &__container {
+      width: 100%;
+    }
+    & label {
+      font-size: 1.71em;
+      font-weight: 700;
+      letter-spacing: 0;
+      color: $stratos;
+      @media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
+        font-size: 1.3em;
+        font-weight: 600;
+      }
+    }
+  }
+}

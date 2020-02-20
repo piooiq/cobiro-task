@@ -1,0 +1,14 @@
+<div class="search__wrapper">
+  <input
+    class="search__input"
+    type="text"
+    #filterInput
+    placeholder="Search"
+    (keyup.enter)="filter.emit(filterInput.value)"/>
+  <button
+    class="button button_search"
+    type="button"
+    (click)="filter.emit(filterInput.value)">
+    <img src="/assets/images/search_icon.svg"/>
+  </button>
+</div>

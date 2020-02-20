@@ -1,0 +1,10 @@
+<ul class="search__list">
+  <li *ngFor="let item of data; trackBy: trackByFn">
+    <div class="search__item__container" [style.padding-left]="item.indent*3+'em'" >
+      <div class="search__item">
+        <label>{{item.title}}</label>
+        <a class="link" [routerLink]="['/details', item.id]"><button class="button button_blue" type="button" (click)="selectItem.emit(item.id)">Button</button></a>
+      </div>
+    </div>
+  </li>
+</ul>

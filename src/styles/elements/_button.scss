@@ -1,0 +1,35 @@
+.button {
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color .2s ease-out;
+  &:focus {
+    outline: none;
+  }
+  &_blue {
+    background-color: $azure_radiance;
+    padding: 0.85em 2.64em;
+    color: $blank;
+    &:hover {
+      background-color: $lochmara;
+    }
+    &:active {
+      background-color: $endeavour;
+    }
+  }
+  &_search {
+    width: 40px;
+    height: 100%;
+    background: $blank;
+    &:hover {
+      background-color: $athens_gray;
+    }
+    &:active {
+      background-color: $zircon;
+    }
+  }
+}

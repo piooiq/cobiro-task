@@ -1,0 +1,48 @@
+.header {
+  &_main {
+    position: fixed;
+    background-color: $blank;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $catskill_white;
+    & button.menu {
+      display: none;
+      @media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        background: white;
+        border: 1px solid $endeavour;
+        padding: 3px;
+      }
+    }
+    & .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      & > * {
+        margin: 0px 5px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+      }
+
+      & .user {
+        &__name {
+          font-weight: 600;
+          font-size: 1em;
+          letter-spacing: 0;
+          color: $prussian_blue;
+        }
+      }
+    }
+  }
+}

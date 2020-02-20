@@ -1,0 +1,13 @@
+<nav class="nav_side" [class.mobile-visible]="menuOpened">
+  <div class="nav_side_info">
+      <img src="/assets/images/nicebeauty.com_eu_.png"/>
+      <h2>hairstylist.com</h2>
+  </div>
+  <ul class="nav_side_list">
+      <li class="nav_side_item">Marketing Plan</li>
+      <a class="link" [routerLink]="['/dashboard']" ><li  [class.active]="url==='/dashboard'" class="nav_side_item">Dashboard</li></a>
+      <li class="nav_side_item">My Ads</li>
+      <li class="nav_side_item">Analytics</li>
+      <li class="nav_side_item">Cobiro Store</li>
+  </ul>
+</nav>
